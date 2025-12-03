@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/main.css">
+  <title>Team Meet | Connect with anyone at anytime from anywhere through our service</title>
+</head>
+
+<body class="bg-background">
+  <!-- ****** header section ****** -->
+  <header class="layout_wrapper bg-background">
+    <!-- ****** nav section ****** -->
+    <nav class="bg-background text-textColor mx-3 px-1 py-5 flex justify-between items-center layout_fullbleed">
+      <!-- sidebar -->
+      <input type="checkbox" id="sidebar_access" class="hidden">
+
+      <div class="flex space-x-3 items-center bg-background">
+        <label for="sidebar_access" class="icon-frame select-none">
+          <ion-icon name="menu" class="w-6 h-6 text-muteColor hover:text-textColor"></ion-icon>
+        </label>
+
+        <!-- logo -->
+        <a href="#" class="nav_logo flex items-center space-x-2">
+          <img src="/assets/logo.png" alt="Team Meet Logo" class="w-10 h-10">
+          <p class="text-muteColor text-2xl font-semibold">Team Meet</p>
+        </a>
+      </div>
+
+      <!-- sidebar -->
+      <section class="sidebar_section bg-background shadow-xl">
+        <!-- sidebar close -->
+        <label for="sidebar_access"
+          class="p-1 border border-gray-400 rounded flex justify-center items-center point w-fit absolute right-4 top-4 hover:bg-accent">
+          <ion-icon name="caret-back-outline" class="text-xl text-muteColor"></ion-icon>
+        </label>
+
+        <!-- icons -->
+        <div class="mt-20">
+          <input type="radio" name="sidebar_icons" id="sidebar_icon1" class="hidden" checked>
+
+          <label for="sidebar_icon1"
+            class="sidebar_icon1 flex justify-start items-center space-x-3 p-4 point rounded-r-full hover:bg-accent trans">
+            <ion-icon name="calendar-outline" class="ion-icon w-6 h-6 text-muteColor hover:text-textColor"></ion-icon>
+            <p class="font-bold">Meetings</p>
+          </label>
+
+          <input type="radio" name="sidebar_icons" id="sidebar_icon2" class="hidden">
+
+          <label for="sidebar_icon2"
+            class="sidebar_icon2 flex justify-start items-center space-x-3 p-4 point rounded-r-full hover:bg-accent trans">
+            <ion-icon name="videocam-outline" class="ion-icon w-6 h-6 text-muteColor hover:text-textColor"></ion-icon>
+            <p class="font-bold">Calls</p>
+          </label>
+        </div>
+      </section>
+
+      <!-- navbar lists -->
+      <div class="navbar_lists flex justify-center space-x-5 items-center">
+        <!-- date -->
+        <div class="date_group flex justify-center items-center space-x-1">
+          <p class="text-muteColor font-medium">23:05</p>
+          <span class="text-muteColor font-medium">.</span>
+          <p class="text-muteColor font-medium">Wed 3 Dec</p>
+        </div>
+
+        <!-- icons -->
+        <div class="icon_group flex justify-center space-x-0.5 items-center">
+          <div class="icon-frame">
+            <ion-icon name="help-circle-outline" class="w-6 h-6 text-muteColor"></ion-icon>
+          </div>
+          <div class="icon-frame">
+            <ion-icon name="chatbox-ellipses-outline" class="w-5 h-6 text-muteColor"></ion-icon>
+          </div>
+          <div class="icon-frame">
+            <ion-icon name="settings" class="w-5 h-6 text-muteColor"></ion-icon>
+          </div>
+        </div>
+
+        <!-- avatar -->
+        <div class="flex justify-center space-x-0.5 items-center">
+          <div class="icon-frame select-none" onclick="document.documentElement.classList.toggle('dark')">
+            <ion-icon name="contrast-outline" class="w-5 h-6 text-muteColor"></ion-icon>
+          </div>
+          <div class="icon-frame">
+            <img src="/assets/avatar.png" alt="Avatar" class="w-9 h-9">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ****** hero section ****** -->
+    <section class="hero_section layout_container py-15 border-b border-b-gray-400">
+      <!-- hero title -->
+      <div class="hero_title md:w-[80%] text-center mx-auto mb-15">
+        <h1 class="mb-7">Video calls and meetings for everyone</h1>
+        <h3 class="md:w-[80%] mx-auto">Connect, collaborate and celebrate from anywhere with Team Meet</h3>
+      </div>
+
+      <!-- hero content -->
+      <div class="md:w-[80%] mx-auto flex flex-col md:flex-row justify-center items-center space-x-5 space-y-5">
+        <!-- meeting button -->
+        <div
+          class="meet_link flex bg-primary justify-center items-center point trans p-4 rounded-full text-background hover:bg-blue-700 shadow space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="w-6 h-6">
+            <path fill="currentColor"
+              d="M9 16h2v-3h3v-2h-3V8H9v3H6v2h3zm-5 4q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l4-4v11l-4-4V18q0 .825-.587 1.413T16 20zm0-2h12V6H4zm0 0V6z" />
+          </svg>
+          <p>New Meeting</p>
+        </div>
+
+        <!-- meeting input -->
+        <div
+          class="input_group md:w-auto flex bg-background justify-center items-center p-4 rounded-xl text-textColor border border-muteColor hover:border-textColor space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+            class="w-100% h-6 text-muteColor">
+            <path fill="currentColor"
+              d="M3 20q-.825 0-1.412-.587T1 18V6q0-.825.588-1.412T3 4h18q.825 0 1.413.588T23 6v12q0 .825-.587 1.413T21 20zm0-2h18V6H3zm5-1h8v-2H8zm-3-3.5h2v-2H5zm4 0h2v-2H9zm4 0h2v-2h-2zm4 0h2v-2h-2zM5 10h2V8H5zm4 0h2V8H9zm4 0h2V8h-2zm4 0h2V8h-2zM3 18V6z" />
+          </svg>
+          <input type="text" placeholder="Enter a code link" class="w-70% sm:w-100% outline-0 text-xl">
+        </div>
+
+        <!-- meet join -->
+        <p class="font-semibold text-muteColor hover:text-primary point trans">Join</p>
+      </div>
+    </section>
+  </header>
+
+  <!-- ****** header section ****** -->
+  <main class="main_section layout_wrapper py-15 flex justify-center items-center">
+    <!-- ****** features section ****** -->
+    <section class="features_section layout_container flex space-x-5">
+      <!-- card 1 -->
+      <div class="card">
+        <div class="card_banner w-full flex justify-center">
+          <img src="/assets/copy-link.svg" alt="Copy link svg">
+        </div>
+
+        <div class="card_content text-center">
+          <h3 class="mb-5 text-textColor">Get a link that you can share</h3>
+          <p class="text-muteColor">Click <b>New Meeting</b> to get a link that you can send to people that you want to
+            meet with</p>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="card">
+        <div class="card_banner w-full flex justify-center">
+          <img src="/assets/calender.svg" alt="Calender svg">
+        </div>
+
+        <div class="card_content text-center">
+          <h3 class="mb-5 text-textColor">Plan ahead</h3>
+          <p class="text-muteColor">Click <b>New Meeting</b> to schedule meetings in Calender and send invitations to
+            participants</p>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="card">
+        <div class="card_banner w-full flex justify-center">
+          <img src="/assets/secure.svg" alt="Secure svg">
+        </div>
+
+        <div class="card_content text-center">
+          <h3 class="mb-5 text-textColor">Your meeting is safe</h3>
+          <p class="text-muteColor">No one can join a meeting unless invited or admitted by the host</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ****** footer section ****** -->
+  <footer class="footer_section text-center py-3 pb-10">
+    <p class="text-muteColor">Team Meet developed by
+      <a href="https://github.com/awizp/team-meet-layout" class="text-primary">Vishnuprakash</a>
+    </p>
+  </footer>
+
+  <!-- ****** Ionic icons scripts ****** -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

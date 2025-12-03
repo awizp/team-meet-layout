@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #1973E7;
+  --color-secondary: #DFEBFD;
+  --color-accent: #f0f0f0;
+
+  --color-background: #fff;
+  --color-textColor: #313131;
+  --color-muteColor: #5F6368;
+}
+
+@layer dark-mode {
+  .dark {
+    --color-primary: #1b54b6;
+    --color-secondary: #ADC6FF;
+    --color-accent: #32353E;
+
+    --color-background: #10131A;
+    --color-textColor: #FEFEFF;
+    --color-muteColor: #E6E9EE;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl text-textColor;
+  }
+
+  h3 {
+    @apply text-muteColor text-2xl;
+  }
+}
+
+@layer utilities {
+  .icon-frame {
+    @apply flex justify-center items-center p-1 w-12 h-12 rounded-full hover:bg-accent cursor-pointer transition-all active:bg-accent;
+  }
+
+  .point {
+    @apply cursor-pointer;
+  }
+
+  .trans {
+    @apply transition-all;
+  }
+
+  .card {
+    @apply flex flex-col space-y-10 px-1 py-4 my-2;
+  }
+}
