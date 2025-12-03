@@ -20,15 +20,17 @@ A clean and responsive landing page built using HTML, CSS and TailwindCSS for a 
 
 ``````git clone https://github.com/awizp/team-meet-layout.git``````
 
-2. Open the ```index.html``` file in your browser to view the project.
+2. Open the folder and Run ```npm install``` for install debendencies.
+
+3. Run ```npm run dev``` to run the application in your local host.
 
 ### Screenshot
 
-![Webpage Design](https://github.com/awizp/mp3-downloader-landingpage/blob/main/public/assets/design.png)
+![Webpage Design](https://github.com/awizp/team-meet-layout/blob/main/public/assets/design.png)
 
 ### Live Demo
 
-https://tamil-mp3-downloader.netlify.app/
+https://team-meet-ui.netlify.app/
 
 ### Contribution
 
