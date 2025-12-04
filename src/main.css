@@ -98,8 +98,8 @@
             align-items: flex-start;
             justify-content: end;
             gap: 3rem;
-            margin-left: 1rem;
-            margin-bottom: 2rem;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
 
             position: fixed;
             bottom: 0;
@@ -162,6 +162,7 @@
         cursor: pointer;
         position: fixed;
         position-anchor: --carousel;
+        z-index: 5;
     }
 
     .features_section::scroll-button(right) {
